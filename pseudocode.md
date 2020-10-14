@@ -71,7 +71,7 @@
     // start game
     
     if keypressed = one of [up, down, left, right]    
-        while (not snake touches borders OR not snake touches itself)
+        while (not (snakeTouchesBorders AND snakeTouchesItself))
             switch case key:
                 if key == up => moveUp()
                 if key == down => moveDown()
@@ -89,6 +89,16 @@
     else, keep moving in the same direction
     end if
 **end main**
+
+**function snakeTouchesBorders**
+    if snake touches borders return true 
+    else return false
+**end function**
+
+**function snakeTouchesItself**
+    if snake touches itself return true 
+    else return false
+**end function**
 
 **function createFood**
 
