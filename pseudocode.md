@@ -56,3 +56,64 @@ on the computer.
 - if the game is over, display score
 - if the game is over ask the user if she/he wants to replay
 
+# Pseudocode for Snake Game
+
+### Snake class definition
+class Snake {
+   // properties
+   int size;
+   int speed;
+   int posx, posy;
+   array position = [x1, y1, x2, j2];
+          
+   // define constructor
+   constructor(size, speed, posx, posy) {
+      this.size = size;
+      this.speed = speed;   
+      this.posx = posx;
+      this.posy = posy;   
+
+      // posx = random(width);
+      // posy = random(height);
+   }
+           
+   // define methods (actions)
+   draw() {
+      // put the snake in the middle of the block;
+      // put food randomly at x px distance from the snake; (create food)
+   }
+
+   create food() {
+      // initialize the object food
+   }
+           
+   moveRight() {
+      // move the snake to the right
+   }
+
+   moveLeft() {
+      // move the snake to the right
+   }
+
+   moveUp() {
+      // move the snake to the right
+   }
+
+   moveDown() {
+      // move the snake to the right
+   }
+
+   updatePosition() {
+      
+   }
+
+   getSpeed() {
+      return speed;
+   }
+       
+   goFaster(speedUp) {
+      speed += speedUp;
+   }
+}
+
+### Game class declaration ???
