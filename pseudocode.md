@@ -59,16 +59,14 @@
 
  Set size to 10;
  Set speed to 1;
- // Set posx, posy;
  Set position to [5, 10, 8, 10] ([x1, y1, x2, j2]);
 
  ### Methods (actions)
  
- /////// first method called when game starts
- *function* main
-    // put the snake in the middle of the block
-    // put food randomly at x units distance from the snake (create food)
-    // ask the user if he wants to start the game
+ **function** main (first method called when game starts)
+    - put the snake in the middle of the block
+    - put food randomly at x units distance from the snake (create food)
+    - ask the user if he wants to start the game
     
     while key = one of [up, down, left, right]  
         // start game
@@ -82,51 +80,51 @@
     end while
     
     // keep movin in the same direction
- *end main*
+**end main**
 
-*function* createFood 
+**function** createFood 
     // initialize the object food
-end function
+**end function**
  
-*function* moveRight
-   // move the snake to the right
+**function** moveRight
+   - move the snake to the right
     x += 1;
-*end function*
+**end function**
 
-*function* moveLeft
-   // move the snake to the left
+**function** moveLeft
+   - move the snake to the left
     x -= 1;
-*end function*
+**end function**
 
-*function* moveDown
-   // move the snake down
-    Y -= 1;
-*end function*
+**function** moveDown
+   - move the snake down
+    y -= 1;
+**end function**
 
-*function* moveUp
-   // move the snake up
+**function** moveUp
+   - move the snake up
     y += 1
-*end function*
+**end function**
 
-*function* eat {
+**function** eat {
     Ser grandit 
     Ser va + vite 
     update(); ??
-*end function*
+**end function**
 
-*function* update
-  // augmente la taille
-  // augmente la vitesse
-  // changer la position
-*end function*
+**function** update
+  - augmente la taille
+  - augmente la vitesse
+  - changer la position
+**end function**
 
-*function* updatePosition
-  // augmente la taille
-*end function*
+**function** updatePosition
+  - augmente la taille
+**end function**
 
-*function* goFaster(speedUp)
+**function** goFaster(speedUp)
     speed += speedUp;
- *end function*
+**end function**
 
 let mysnake = [10, 1, 2, 3];
 console.log();
