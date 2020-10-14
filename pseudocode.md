@@ -55,66 +55,80 @@
 
 # Pseudocode for Snake Game
 
-### Snake class definition
-class Snake {
-   // properties
-   int size;
-   int speed;
-   int posx, posy;
-   array position = [x1, y1, x2, j2];
-          
-   // define constructor 
-   constructor(size, speed, posx, posy) {
-      this.size = size;
-      this.speed = speed;   
-      this.posx = posx;
-      this.posy = posy;   
+### Variables
 
-      // posx = random(width);
-      // posy = random(height);
-   }
-           
-   // define methods (actions)
-   draw() {
-      // put the snake in the middle of the block;
-      // put food randomly at x px distance from the snake; (create food)
-   }
+ Set size to 10;
+ Set speed to 1;
+ // Set posx, posy;
+ Set position to [5, 10, 8, 10] ([x1, y1, x2, j2]);
 
-   create food() {
-      div 
-      // initialize the object food
-   }
-           
-   moveRight() {
-      // move the snake to the right
-   }
+ ### Methods (actions)
+ 
+ /////// first method called when game starts
+ *function* main
+    // put the snake in the middle of the block
+    // put food randomly at x units distance from the snake (create food)
+    // ask the user if he wants to start the game
+    
+    while key = one of [up, down, left, right]  
+        // start game
+        key = user's input
+        
+        switch case key:
+            if key == up => moveUp()
+            if key == down => moveDown()
+            if key == right => moveRight()
+            if key == left => moveLeft()
+    end while
+    
+    // keep movin in the same direction
+ *end main*
 
-   moveLeft() {
-      // move the snake to the right
-   }
+*function* createFood 
+    // initialize the object food
+end function
+ 
+*function* moveRight
+   // move the snake to the right
+    x += 1;
+*end function*
 
-   moveUp() {
-      // move the snake to the right
-   }
+*function* moveLeft
+   // move the snake to the left
+    x -= 1;
+*end function*
 
-   moveDown() {
-      // move the snake to the right
-   }
+*function* moveDown
+   // move the snake down
+    Y -= 1;
+*end function*
 
-   updatePosition() {
-      
-   }
+*function* moveUp
+   // move the snake up
+    y += 1
+*end function*
 
-   getSpeed() {
-      return speed;
-   }
-       
-   goFaster(speedUp) {
-      speed += speedUp;
-   }
-}
+*function* eat {
+    Ser grandit 
+    Ser va + vite 
+    update(); ??
+*end function*
 
-let mysnake = new Snake(10, 1, 2, 3);
+*function* update
+  // augmente la taille
+  // augmente la vitesse
+  // changer la position
+*end function*
+
+*function* updatePosition
+  // augmente la taille
+*end function*
+
+*function* goFaster(speedUp)
+    speed += speedUp;
+ *end function*
+
+let mysnake = [10, 1, 2, 3];
 console.log();
 
 // **************************************************************************************************************************
@@ -148,31 +162,6 @@ position[x1] += 1 //right
 position[y1] -= 1 //left
 
 manger: position[x2] += 1;
-  
-
-# Mouvements 
-
-*moveRight() {
-  x += 1;
-}*
-
-*moveLeft() {
-  x -= 1;
-}*
-
-*moveDown() {
-  Y -= 1;
-}*
-
-*moveUp() {
-  y += 1
-}*
-
-*eat() {
-  Ser grandit 
-  Ser va + vite 
-  update(); ??
-}*
 
 Si l'utilisateur appuie sur la flèche droite
   moveRight();
@@ -186,11 +175,9 @@ Si l'utilisateur appuie sur la flèche haut
 Si l'utilisateur appuie sur la flèche bas
   moveDown();
 
-  
 # Manger 
 Si eat()
   Alors
-   
    
 *collision()* 
 Si 
