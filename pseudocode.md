@@ -1,5 +1,15 @@
 # Snake game
 
+# Section Ahmad 
+
+- créer le serpent dans une petite taille (3 carrés)
+- Créer l'environnement du jeu
+- Donner la commande du serpent:
+  - tourner à gauche, à droite, en haut, en bas.
+  - aller plus vite s'il mange quelque chose de spécifique
+  - grossir s'il mange un carré
+  - le jeu devient plus rapide quand il devient plus grand
+
 ### Actions Cristina
 
 - create snake
