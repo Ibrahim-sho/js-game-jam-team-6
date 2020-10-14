@@ -58,17 +58,21 @@
 ### Variables
 
  Set size to 10;
+ 
  Set speed to 1;
+ 
  Set score to 0;
+ 
  Set position to [5, 10, 8, 10] ([x1, y1, x2, j2]);
 
  ### Methods (actions)
  
- **function main (first method called when game starts)**
-    put the snake in the middle of the block
-    put food randomly at x units distance from the snake (create food)
-    ask the user if he wants to start the game
-    // start game
+ ***function*** main (first method called when page loads)
+ 
+    - put the snake in the middle of the block
+    - put food randomly at x units distance from the snake (create food)
+    - ask the user if he wants to start the game
+    - start game
     
     if keypressed = one of [up, down, left, right]    
         while (not (snakeTouchesBorders AND snakeTouchesItself))
@@ -88,83 +92,121 @@
     
     else, keep moving in the same direction
     end if
-**end main**
+    
+***end*** function
 
-**function snakeTouchesBorders**
+***function*** snakeTouchesBorders
+
     if snake touches borders return true 
+    
     else return false
-**end function**
+    
+***end function*** 
 
-**function snakeTouchesItself**
+***function*** snakeTouchesItself
+
     if snake touches itself return true 
+    
     else return false
-**end function**
+    
+***end function***
 
-**function createFood**
+***function createFood***
 
-   - initialize the object food
+   // initialize the object food
    
-**end function**
+***end function***
  
-**function moveRight**
-   - move the snake to the right
+***function*** moveRight
+
+   // move the snake to the right
+   
     x += 1;
-**end function**
+    
+***end function***
 
-**function moveLeft**
-   - move the snake to the left
+***function*** moveLeft
+
+   // move the snake to the left
+   
     x -= 1;
-    change direction to left
-**end function**
+    
+    // change direction to left
+    
+***end function***
 
-**function moveDown**
-   - move the snake down
+***function*** moveDown
+
+   // move the snake down
+   
     y -= 1;
-**end function**
+    
+***end function***
 
-**function moveUp**
-   - move the snake up
+***function*** moveUp
+
+   // move the snake up
+   
     y += 1
-**end function**
+    
+***end function***
 
-**function eat**
-    Ser grandit 
-    Ser va + vite 
-    update(); ??
-**end function**
+***function*** update
 
-**function update**
   - size++
   - speed+10
   - change position
-**end function**
+  
+***end function***
 
-**function updatePosition**
+***function*** updatePosition
+
   - position changes
-**end function**
+  
+***end function***
 
-**function updateSize**
+***function*** updateSize
+
   - size++
-**end function**
+  
+***end function***
 
-**function goFaster(speedUp)**
+***function*** goFaster(speedUp)
+
     speed += speedUp;
-**end function**
+    
+***end function***
 
-**function updateScore()**
+***function*** updateScore()
+
     score = size
-**end function**
+    
+***end function***
 
-**function pickRandomLocation(param)**
+***function*** eat
+
+    - updateSize()
+    - updateScore()
+    - goFaster()
+    
+***end function***
+
+***function*** pickRandomLocation(param)
+
     position = random(1, max width)
-**end function**
+    
+***end function***
 
-**function collision(snake, food)**
+***function*** collision(snake, food)
+
     if the positions of the 2 objetcs collide
+    
     then
-      Game Over (reset game)
-      Ask the user if he wants to replay
-**end function**
+    
+      - Game Over (reset game)
+      - Ask the user if he wants to replay
+      
+***end function***
 
 
 let mysnake = [10, 1, 2, 3];
@@ -174,24 +216,12 @@ console.log();
 
 ### PSEUDOCODE FRANÇAIS
 
-Éléments à créer en HTML et CSS :
-- Zone de jeu (Area)
-- Serpent (Ser)
-- Nourriture (Food)
-
 Initial :
 function main() menu > le jeu demarre
 - Ser vitesse 1 
 - Position : centre
 - Direction : Gauche => Droite
 - Taille : 3 cases
-
-### Fonctions
-*update() { => - change à chaque fois la taille du Ser, la vitesse, la position;
-  1. augmente la taille
-  2. augmente la vitesse
-  3. changer la position
-}*
 
 ex: position = [1, 2, 3, 2]; => [2, 2, 4, 2...]
 [x1, y1, x2, y2]
