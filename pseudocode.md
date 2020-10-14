@@ -1,7 +1,31 @@
 # Snake game
 
-### Actions Ahmad
+### Actions
+- create snake 3 units large in the middle of the container
+- create random food 1 unit large
+- move up
+- move down
+- move right
+- move left
+- increase speed
+- when key pressed, move around
+- draw snake with new position ??
+- eating action
+- pick random location
+- update snake position (when move around, when eating)
+- update snake length (when move around, when eating)
+- create a grid for background
 
+**Conditions**
+- if snake touches itself then game over
+- the snake should move inside a container
+- the food should change position randomly after each time the snake touches it
+- if the snake touches any of the borders of the container the game is over
+- if the snake touches itself the game is over
+- if the game is over, display score
+- if the game is over ask the user if she/he wants to replay
+
+### Actions Ahmad
 - créer le serpent dans une petite taille (3 carrés)
 - Créer l'environnement du jeu
 - Donner la commande du serpent:
@@ -10,43 +34,16 @@
   - grossir s'il mange un carré
   - le jeu devient plus rapide quand il devient plus grand
 
-### Actions Cristina
-
-- create snake
-- create food
-- move up
-- move down
-- move right
-- move left
-- update snake position
-- when key pressed, move around
-- show (draw) snake with new position
-- eating action
-- pick random location
-- change snake length after eating
-- create a grid for background
-
-
 ### Actions Eva
-
-Ce programme est un jeu Snake. 
-
 - De la nourriture est aléatoirement généré dans le bloc
 - Si le serpent touche la nourriture avec sa tête, son corps s'allonge
-
 - Si la tête du serpent touche le corps du serpent, game over
-
 - Si le user appuie sur la flèche de droite,Alors le serpent se décale vers la droite
 - Si le user appuie sur la flèche de gauche, Alors le serpent se décale vers la gauche
 - Si le user appuie sur la flèche du haut, Alors le serpent se décale vers le haut
 - Si le user appuie sur la flèche de gauche, Alors le serpent se décale vers la droite
 
-
 ### Actions Ibrahim
-
-This game will allow the user to play the snake game
-on the computer.
-
 - The snake should move inside a container
 - The snake should move in 4 directions
 - The snake should touch a dot (Food) and grow in size
@@ -122,16 +119,12 @@ console.log();
 
 // **************************************************************************************************************************
 
-### PSEUDOCODEFRANÇAIS
-
-This game will allow the user to play the snake game
-on the computer.
+### PSEUDOCODE FRANÇAIS
 
 Éléments à créer en HTML et CSS :
 - Zone de jeu (Area)
 - Serpent (Ser)
 - Nourriture (Food)
-
 
 Initial :
 function main() menu > le jeu demarre
