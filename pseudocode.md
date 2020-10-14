@@ -30,3 +30,15 @@ Ce programme est un jeu Snake.
 - Si le user appuie sur la flèche de gauche, Alors le serpent se décale vers la gauche
 - Si le user appuie sur la flèche du haut, Alors le serpent se décale vers le haut
 - Si le user appuie sur la flèche de gauche, Alors le serpent se décale vers la droite
+
+
+### Action Ibrahim
+
+This game will allow the user to play the snake game
+on the computer.
+
+- The snake should move inside a container
+- The snake should move in 4 directions
+- The snake should touch a dot (Food) and grow in size
+- The food should change position randomly after each time the snake touches it
+- if the snake touches any of the borders of the container the game restarts
