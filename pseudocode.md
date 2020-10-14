@@ -63,10 +63,10 @@
 
  ### Methods (actions)
  
- **function** main (first method called when game starts)
-    - put the snake in the middle of the block
-    - put food randomly at x units distance from the snake (create food)
-    - ask the user if he wants to start the game
+ **function main (first method called when game starts)**
+    put the snake in the middle of the block
+    put food randomly at x units distance from the snake (create food)
+    ask the user if he wants to start the game
     
     while key = one of [up, down, left, right]  
         // start game
@@ -79,52 +79,60 @@
             if key == left => moveLeft()
     end while
     
-    // keep movin in the same direction
+    else, keep movin in the same direction
 **end main**
 
-**function** createFood 
-    // initialize the object food
+**function createFood**
+   - initialize the object food
 **end function**
  
-**function** moveRight
+**function moveRight**
    - move the snake to the right
     x += 1;
 **end function**
 
-**function** moveLeft
+**function moveLeft**
    - move the snake to the left
     x -= 1;
 **end function**
 
-**function** moveDown
+**function moveDown**
    - move the snake down
     y -= 1;
 **end function**
 
-**function** moveUp
+**function moveUp**
    - move the snake up
     y += 1
 **end function**
 
-**function** eat {
+**function eat**
     Ser grandit 
     Ser va + vite 
     update(); ??
 **end function**
 
-**function** update
+**function update**
   - augmente la taille
   - augmente la vitesse
   - changer la position
 **end function**
 
-**function** updatePosition
+**function updatePosition**
   - augmente la taille
 **end function**
 
-**function** goFaster(speedUp)
+**function goFaster(speedUp)**
     speed += speedUp;
 **end function**
+
+**function collision(snake, food)**
+    if the positions of the 2 objetcs collide
+    then
+      Game Over (reset game)
+      Ask the user if he wants to replay
+**end function**
+
 
 let mysnake = [10, 1, 2, 3];
 console.log();
@@ -160,28 +168,4 @@ position[x1] += 1 //right
 position[y1] -= 1 //left
 
 manger: position[x2] += 1;
-
-Si l'utilisateur appuie sur la flèche droite
-  moveRight();
-
-Si l'utilisateur appuie sur la flèche gauche
-  moveLeft();
-
-Si l'utilisateur appuie sur la flèche haut
-  moveUp();
- 
-Si l'utilisateur appuie sur la flèche bas
-  moveDown();
-
-# Manger 
-Si eat()
-  Alors
-   
-*collision()* 
-Si 
-  les positions des 2 objets se touchent
-Alors
-  Game Over (on remets les valeur initiales)
-  Demander à l'utilisateur si il veux jouer de nouveau
-
 
