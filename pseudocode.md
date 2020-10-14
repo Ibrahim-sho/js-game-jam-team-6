@@ -117,3 +117,67 @@ class Snake {
 }
 
 ### Game class declaration ???
+
+
+### PSEUDOCODEFRANÇAIS
+
+This game will allow the user to play the snake game
+on the computer.
+
+Éléments à créer en HTML et CSS :
+- Zone de jeu (Area)
+- Serpent (Ser)
+- Nourriture (Food)
+
+
+Initial :
+- Ser vitesse 1 
+- Position : centre
+- Direction : Gauche => Droite
+- Taille : 3 cases
+
+# Mouvements 
+
+
+Si
+  l'utilisateur appuie sur la flèche droite
+Alors
+  Ser va à droite
+
+
+Si
+  l'utilisateur appuie sur la flèche gauche
+Alors
+  Ser va à gauche
+
+Si
+  l'utilisateur appuie sur la flèche haut
+Alors
+  Ser va en haut
+  
+  Si
+  l'utilisateur appuie sur la flèche haut
+Alors
+  Ser va en haut
+
+Si
+  l'utilisateur appuie sur la flèche bas
+Alors
+  Ser va en bas
+  
+  # Manger 
+  
+Si
+   Ser mange Food
+Alors
+   Ser grandit 
+   Ser va + vite 
+   
+# Game Over   
+   
+Si
+  Ser mange Ser
+Alors
+  GAME OVER 
+  
+
