@@ -66,7 +66,7 @@ class Snake {
    int posx, posy;
    array position = [x1, y1, x2, j2];
           
-   // define constructor
+   // define constructor 
    constructor(size, speed, posx, posy) {
       this.size = size;
       this.speed = speed;   
@@ -84,6 +84,7 @@ class Snake {
    }
 
    create food() {
+      div 
       // initialize the object food
    }
            
@@ -116,8 +117,10 @@ class Snake {
    }
 }
 
-### Game class declaration ???
+let mysnake = new Snake(10, 1, 2, 3);
+console.log();
 
+// **************************************************************************************************************************
 
 ### PSEUDOCODEFRANÇAIS
 
@@ -131,53 +134,76 @@ on the computer.
 
 
 Initial :
+function main() menu > le jeu demarre
 - Ser vitesse 1 
 - Position : centre
 - Direction : Gauche => Droite
 - Taille : 3 cases
 
+### Fonctions
+*update() { => - change à chaque fois la taille du Ser, la vitesse, la position;
+  1. augmente la taille
+  2. augmente la vitesse
+  3. changer la position
+}*
+
+ex: position = [1, 2, 3, 2]; => [2, 2, 4, 2...]
+[x1, y1, x2, y2]
+position[y1] += 1 //up
+position[y1] -= 1 //down
+position[x1] += 1 //right
+position[y1] -= 1 //left
+
+manger: position[x2] += 1;
+  
+
 # Mouvements 
 
+*moveRight() {
+  x += 1;
+}*
 
-Si
-  l'utilisateur appuie sur la flèche droite
-Alors
-  Ser va à droite
+*moveLeft() {
+  x -= 1;
+}*
 
+*moveDown() {
+  Y -= 1;
+}*
 
-Si
-  l'utilisateur appuie sur la flèche gauche
-Alors
-  Ser va à gauche
+*moveUp() {
+  y += 1
+}*
 
-Si
-  l'utilisateur appuie sur la flèche haut
-Alors
-  Ser va en haut
+*eat() {
+  Ser grandit 
+  Ser va + vite 
+  update(); ??
+}*
+
+Si l'utilisateur appuie sur la flèche droite
+  moveRight();
+
+Si l'utilisateur appuie sur la flèche gauche
+  moveLeft();
+
+Si l'utilisateur appuie sur la flèche haut
+  moveUp();
+ 
+Si l'utilisateur appuie sur la flèche bas
+  moveDown();
+
   
-  Si
-  l'utilisateur appuie sur la flèche haut
-Alors
-  Ser va en haut
-
-Si
-  l'utilisateur appuie sur la flèche bas
-Alors
-  Ser va en bas
-  
-  # Manger 
-  
-Si
-   Ser mange Food
-Alors
-   Ser grandit 
-   Ser va + vite 
+# Manger 
+Si eat()
+  Alors
    
-# Game Over   
    
-Si
-  Ser mange Ser
+*collision()* 
+Si 
+  les positions des 2 objets se touchent
 Alors
-  GAME OVER 
-  
+  Game Over (on remets les valeur initiales)
+  Demander à l'utilisateur si il veux jouer de nouveau
+
 
