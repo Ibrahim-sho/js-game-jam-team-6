@@ -88,9 +88,10 @@
                 - updateSize()
                 - updateScore()
                 - goFaster()
+            end if
         end while
     
-    else, keep moving in the same direction
+    else keep moving in the same direction
     end if
     
 ***end*** function
