@@ -1,15 +1,5 @@
 # Snake game
 
-# Section Ahmad 
-
-- créer le serpent dans une petite taille (3 carrés)
-- Créer l'environnement du jeu
-- Donner la commande du serpent:
-  - tourner à gauche, à droite, en haut, en bas.
-  - aller plus vite s'il mange quelque chose de spécifique
-  - grossir s'il mange un carré
-  - le jeu devient plus rapide quand il devient plus grand
-
 ### Actions Cristina
 
 - create snake
@@ -42,7 +32,7 @@ Ce programme est un jeu Snake.
 - Si le user appuie sur la flèche de gauche, Alors le serpent se décale vers la droite
 
 
-### Action Ibrahim
+### Actions Ibrahim
 
 This game will allow the user to play the snake game
 on the computer.
@@ -51,4 +41,8 @@ on the computer.
 - The snake should move in 4 directions
 - The snake should touch a dot (Food) and grow in size
 - The food should change position randomly after each time the snake touches it
-- if the snake touches any of the borders of the container the game restarts
+- if the snake touches any of the borders of the container the game is over
+- if the snake touches itself the game is over
+- if the game is over, display score
+- if the game is over ask the user if she/he wants to replay
+
