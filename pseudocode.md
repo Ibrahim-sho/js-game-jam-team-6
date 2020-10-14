@@ -9,11 +9,11 @@
 - move left
 - increase speed
 - when key pressed, move around
-- draw snake with new position ??
 - eating action
 - pick random location
 - update snake position (when move around, when eating)
-- update snake length (when move around, when eating)
+- update snake size (when move around, when eating)
+- update snake score (when eating)
 - create a grid for background
 
 **Conditions**
@@ -59,6 +59,7 @@
 
  Set size to 10;
  Set speed to 1;
+ Set score to 0;
  Set position to [5, 10, 8, 10] ([x1, y1, x2, j2]);
 
  ### Methods (actions)
@@ -67,23 +68,32 @@
     put the snake in the middle of the block
     put food randomly at x units distance from the snake (create food)
     ask the user if he wants to start the game
+    // start game
     
-    while key = one of [up, down, left, right]  
-        // start game
-        key = user's input
-        
-        switch case key:
-            if key == up => moveUp()
-            if key == down => moveDown()
-            if key == right => moveRight()
-            if key == left => moveLeft()
-    end while
+    if keypressed = one of [up, down, left, right]    
+        while (not snake touches borders OR not snake touches itself)
+            switch case key:
+                if key == up => moveUp()
+                if key == down => moveDown()
+                if key == right => moveRight()
+                if key == left => moveLeft()
+            end switch
+            
+            if snake eats (eat)
+            then 
+                - updateSize()
+                - updateScore()
+                - goFaster()
+        end while
     
-    else, keep movin in the same direction
+    else, keep moving in the same direction
+    end if
 **end main**
 
 **function createFood**
+
    - initialize the object food
+   
 **end function**
  
 **function moveRight**
@@ -94,6 +104,7 @@
 **function moveLeft**
    - move the snake to the left
     x -= 1;
+    change direction to left
 **end function**
 
 **function moveDown**
@@ -113,17 +124,29 @@
 **end function**
 
 **function update**
-  - augmente la taille
-  - augmente la vitesse
-  - changer la position
+  - size++
+  - speed+10
+  - change position
 **end function**
 
 **function updatePosition**
-  - augmente la taille
+  - position changes
+**end function**
+
+**function updateSize**
+  - size++
 **end function**
 
 **function goFaster(speedUp)**
     speed += speedUp;
+**end function**
+
+**function updateScore()**
+    score = size
+**end function**
+
+**function pickRandomLocation(param)**
+    position = random(1, max width)
 **end function**
 
 **function collision(snake, food)**
