@@ -14,3 +14,4 @@
 - eating action
 - pick random location
 - change snake length after eating
+- create a grid for background
