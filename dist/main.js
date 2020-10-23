@@ -1,0 +1,1 @@
+(()=>{"use strict";let e=[{x:10,y:18},{x:11,y:18},{x:12,y:18}];console.log("en fin!!!");let t=document.getElementById("game-board");setInterval((function(){!function(t){e.forEach((e=>{let n=document.createElement("div");n.style.gridRowStart=e.y,n.style.gridColumnStart=e.x,n.classList.add("snake"),t.appendChild(n)}))}(t)}),1500)})();

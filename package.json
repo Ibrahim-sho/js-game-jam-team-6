@@ -1,0 +1,25 @@
+{
+  "name": "js-game-jam-team-6",
+  "version": "1.0.0",
+  "description": "### We are *Game Jam Team 6*",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shticrina/js-game-jam-team-6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shticrina/js-game-jam-team-6/issues"
+  },
+  "homepage": "https://github.com/Shticrina/js-game-jam-team-6#readme",
+  "devDependencies": {
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0"
+  }
+}
