@@ -1,17 +1,45 @@
+h1{
+    color:cornsilk;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer{
+    color:cornsilk;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;  
+}
+
+.blockscore{
+    color:cornsilk;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;  
+}
+
+
+a{
+    color:cornsilk;
+}
+a:hover{
+    color:darkgreen;
+}
+
+
 body{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items : center;
-    margin: 0;
     background-color: black;
 }
 
 #game-board{
     background-color: cornsilk;
-    width: 100vmin;
-    height: 100vmin;
+    margin: auto;
+    width: 600px;
+    height:600px;
     display: grid;
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
@@ -24,5 +52,4 @@ body{
 
 .food{
     background-color: darkorange;
-    border: .25vmin solid black;
 }
