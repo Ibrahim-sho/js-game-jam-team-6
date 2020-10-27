@@ -1,7 +1,6 @@
-import { draw } from './snake';
-
-console.log("en fin!!!");
-// console.log("again qqqqq");
+import { draw as drawSnake } from './snake';
+import { draw as drawFood } from './food';
+console.log("add food");
 
 let score = 0;
 let gameOver = false;
