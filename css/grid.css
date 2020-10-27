@@ -13,6 +13,16 @@ footer{
     text-align: center;
     font-weight: 600;  
 }
+
+.blockscore{
+    color:cornsilk;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;  
+}
+
+
 a{
     color:cornsilk;
 }
@@ -36,7 +46,6 @@ body{
 }
 
 .snake{
-
     background-color: #fbc531;
     border: .25vmin solid black;
 }
