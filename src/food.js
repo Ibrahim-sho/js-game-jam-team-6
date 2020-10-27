@@ -1,10 +1,10 @@
-let food = [{x: 0, y: 0}]
+let food = [{x: 5, y: 6}]
 
 
-export function draw(gameboardElem){
+export function drawFood(gameboardElem){
 
     food.forEach(segment => {
-        const foodElement = document.createElement("div")
+        let foodElement = document.createElement("div")
         foodElement.classList.add("food");
         foodElement.style.gridRowStart = segment.y
         foodElement.style.gridColumnStart = segment.x
