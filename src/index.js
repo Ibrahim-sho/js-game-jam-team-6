@@ -1,5 +1,5 @@
-import { draw as drawSnake } from './snake';
-import { draw as drawFood } from './food';
+import { drawSnake} from './snake';
+import { drawFood } from './food';
 console.log("add food");
 
 let score = 0;
@@ -9,6 +9,6 @@ let gameboard = document.getElementById("game-board");
 let gameOn = setInterval(main, 1500);
 
 function main() {
-    drawSnake(gameboard);
-    drawFood(gameboard);
+   drawFood(gameboard);
+   drawSnake(gameboard);
 }
