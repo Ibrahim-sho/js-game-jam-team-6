@@ -1,4 +1,4 @@
-import { draw as drawSnake } from './snake';
+import { drawSnake} from './snake';
 import { drawFood } from './food';
 console.log("add food");
 
@@ -10,4 +10,6 @@ let gameOn = setInterval(main, 1500);
 
 function main() {
    drawFood(gameboard);
+   drawSnake(gameboard);
 }
+

@@ -9,7 +9,7 @@ const snakeBody = [ {x: 10, y: 11},
 
 // didn't finish yet
 
-export function draw(gameboardElem){
+export function drawSnake(gameboardElem){
     snakeBody.forEach(segment => {
         const snakeElement = document.createElement("div")
         snakeElement.classList.add("snake");
