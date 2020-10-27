@@ -1,1 +1,1 @@
-(()=>{"use strict";const e=[{x:10,y:11},{x:11,y:11},{x:12,y:11}];console.log("en fin!!!");let t=document.getElementById("game-board");var o;o=t,e.forEach((e=>{const t=document.createElement("div");t.classList.add("snake"),t.style.gridRowStart=e.y,t.style.gridColumnStart=e.x,o.appendChild(t)})),console.log(e)})();
+(()=>{"use strict";console.log("add food");let e=document.getElementById("game-board");draw(e)})();
