@@ -11,5 +11,3 @@ let gameOn = setInterval(main, 1500);
 function main() {
    drawFood(gameboard);
 }
-
-
