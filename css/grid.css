@@ -36,8 +36,9 @@ body{
 }
 
 .snake{
-    background-color: darkgreen;
-    border: 1px solid black;
+
+    background-color: #fbc531;
+    border: .25vmin solid black;
 }
 
 .food{
