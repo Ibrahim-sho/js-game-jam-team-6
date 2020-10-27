@@ -1,1 +1,1 @@
-(()=>{"use strict";let e=[{x:5,y:6}];console.log("add food");let t=document.getElementById("game-board");setInterval((function(){var o;o=t,e.forEach((e=>{let t=document.createElement("div");t.classList.add("food"),t.style.gridRowStart=e.y,t.style.gridColumnStart=e.x,o.appendChild(t)})),console.log(e)}),1500)})();
+(()=>{"use strict";console.log("add food");let t=document.getElementById("game-board");setInterval((function(){!function(t){let e=document.createElement("div");e.classList.add("food"),e.style.gridRowStart=6,e.style.gridColumnStart=5,t.appendChild(e)}(t)}),1500)})();
