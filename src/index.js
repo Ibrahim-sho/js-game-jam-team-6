@@ -11,19 +11,18 @@ let gameboard = document.getElementById("game-board");
 
 
 function main() {
-<<<<<<< HEAD
+    
 	gameboard.innerHTML = "";
 	updateSnake();	
     drawFood(gameboard);
     drawSnake(gameboard);
+    console.log("hello")
 }
 
-let gameOn = setInterval(main, 1500);
+let gameOn = setInterval(main, 100);
 
 
-=======
-   drawFood(gameboard);
-   drawSnake(gameboard);
-}
 
->>>>>>> 20f726a1a6487e74c4c99737e9b00a43a7849082
+
+
+

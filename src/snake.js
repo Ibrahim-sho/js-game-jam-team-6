@@ -1,5 +1,7 @@
 // Coordinates X & Y on the grid 
-let snakeBody = [ {x: 10, y: 11}]
+let snakeBody = [ {x: 10, y: 11},
+                  {x: 15, y: 15},
+                  {x: 20, y: 20}];
 
 
 
