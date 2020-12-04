@@ -13,6 +13,6 @@ export function drawFood(gameboardElem) {
 
 export function randomFood() {
     return {
-        x: Math.floor(Math.random() * 21 ) + 1 , y: Math.floor(Math.random() * 21) + 1;
+        x: Math.floor(Math.random() * 21 ) + 1 , y: Math.floor(Math.random() * 21) + 1
     }
 }
