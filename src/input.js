@@ -1,12 +1,14 @@
+// Declare variables and assign them values
 let inputDirection = {x: 0, y: 0};
 let lastInputDirection = {x: 0, y: 0};
 
-export function getInputDirection() {
+export function getInputDirection() { // Get the new position when moving
     lastInputDirection = inputDirection;
 
     return lastInputDirection;
 }
 
+// Catch user's click event while using the 4 keyboard keys (up, down, left, right)
 document.addEventListener("keydown", (m) => {
     switch(m.key) {
         case 'ArrowUp': // move up
