@@ -8,4 +8,4 @@ In **Snake**, the player pilots a snake around a grid, trying to eat apples and 
 
 
 ### See how it works
-[***go live***](https://shticrina.github.io/snake-game-team6/)
+[***go live***](https://shticrina.github.io/js-game-jam-team-6/)
